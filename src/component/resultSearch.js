@@ -69,6 +69,8 @@ const ResultSearch = ({ data }) => {
                     </View>
                 )}
                 keyExtractor={item => item.id}
+
+                // penggunaan component dari flatlist yang berfungsi untuk tampilan jika data kosong / tidak ada 
                 ListEmptyComponent={() => (
                     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', marginTop: 50 }}>
                         <Text style={{ fontSize: 17 }}>Tidak Ada transaksi</Text>
